@@ -6,18 +6,28 @@
     <description>Recent content in Posts on Lteman Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Jun 2019 22:21:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 21 Jun 2019 15:15:04 -0400</lastBuildDate>
     
 	<atom:link href="http://lteman.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Test Post</title>
+      <title>hugo搭建github pages</title>
+      <link>http://lteman.com/posts/2019/hugo%E6%90%AD%E5%BB%BAgithub-pages/</link>
+      <pubDate>Fri, 21 Jun 2019 15:15:04 -0400</pubDate>
+      
+      <guid>http://lteman.com/posts/2019/hugo%E6%90%AD%E5%BB%BAgithub-pages/</guid>
+      <description>download hugo.exe [官方release地址]()
+new a local web site hugo.exe new site blog  主题 ezhil</description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
       <link>http://lteman.com/posts/test-post/</link>
-      <pubDate>Thu, 20 Jun 2019 22:21:00 -0400</pubDate>
+      <pubDate>Fri, 21 Jun 2019 09:21:00 -0400</pubDate>
       
       <guid>http://lteman.com/posts/test-post/</guid>
-      <description> TEST </description>
+      <description> Welcome to lteman.com </description>
     </item>
     
   </channel>

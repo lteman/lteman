@@ -4,21 +4,34 @@
   
   <url>
     <loc>http://lteman.com/</loc>
-    <lastmod>2019-06-20T22:21:00-04:00</lastmod>
+    <lastmod>2019-06-21T15:15:04-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://lteman.com/posts/</loc>
-    <lastmod>2019-06-20T22:21:00-04:00</lastmod>
+    <lastmod>2019-06-21T15:15:04-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>http://lteman.com/posts/2019/hugo%E6%90%AD%E5%BB%BAgithub-pages/</loc>
+    <lastmod>2019-06-21T15:15:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lteman.com/about/</loc>
+    <lastmod>2019-06-21T15:00:02-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://lteman.com/posts/test-post/</loc>
-    <lastmod>2019-06-20T22:21:00-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2019-06-21T09:21:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lteman.com/archives/</loc>
+    <lastmod>2019-06-21T01:00:02-04:00</lastmod>
   </url>
   
   <url>
