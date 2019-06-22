@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>hugo搭建github pages | Lteman Site</title>
-    <meta property="og:title" content="hugo搭建github pages - Lteman Site">
+    <title>hugo搭建github pages | Lteman&#39;s Website</title>
+    <meta property="og:title" content="hugo搭建github pages - Lteman&#39;s Website">
     <meta property="og:type" content="article">
         
     <meta property="article:published_time" content="2019-06-21T15:15:04&#43;08:00">
@@ -44,7 +44,7 @@
             <div class="site-name ">
                 
                     <a id="logo" href="http://lteman.com">
-                        Lteman Site
+                        Lteman&#39;s Website
                     </a>
                 
                 
@@ -53,7 +53,7 @@
                 <nav id="nav-menu" class="clearfix">
                     <a class="" href="http://lteman.com">首页</a>
                     
-                    <a  href="http://lteman.com/archives/" title="archives">archives</a>
+                    <a  href="http://lteman.com/archives/" title="Archives">Archives</a>
                     
                     <a  href="http://lteman.com/about" title="About">About</a>
                     
@@ -78,24 +78,79 @@
                             2019年6月21日
                         </date>
                         
+                        <div class="post-meta">
+                            <span>|</span>
+                            
+                                <span class="meta-category"><a href="http://lteman.com/categories/hugo">hugo</a></span>
+                            
+                        </div>
+                        
                         
                         
                         <div class="post-content">
                             
 
-<h2 id="download-hugo-exe">download hugo.exe</h2>
+<h2 id="1-下载-hugo">1， 下载 hugo</h2>
 
-<p>[官方release地址]()</p>
+<p>打开<a href="https://github.com/gohugoio/hugo/releases">官方release地址</a> ，根据当前操作系统类型下载和安装相应的 hugo 程序。本文以 Windows 10 操作系统为例。</p>
 
-<h2 id="new-a-local-web-site">new a local web site</h2>
+<h2 id="2-新建一个本地website">2， 新建一个本地Website</h2>
 
-<pre><code>hugo.exe new site blog
-
+<pre><code class="language-bash">$ hugo.exe new site blog
 </code></pre>
+
+<p>执行完该命令后，当前目录下回生成一个 blog 文件。</p>
+
+<h2 id="3-新建一篇文章">3， 新建一篇文章</h2>
+
+<p>创建一个 about 页面：</p>
+
+<pre><code class="language-bash">$ hugo.exe new content/posts/about.md
+</code></pre>
+
+<p>如果想要显示about内容，则需要删除生成 about.md 文件里的<code>draft = true</code> 。</p>
+
+<h2 id="4-给网站添加一个theme">4， 给网站添加一个Theme</h2>
+
+<p>本文以 beautifulhugo 主题为例，将 beautifulhugo 主题 clone 到 themes 目录下。</p>
+
+<pre><code class="language-bash">$ cd themes
+$ git clone https://github.com/rootsongjc/beautifulhugo.git beautifulhugo
+</code></pre>
+
+<p>为了使 Theme 生效，需要修改 blog 目录下的 config.toml 文件的 theme 值。 本文设置为 <code>theme = &quot;beautifulhugo&quot;</code> 。</p>
+
+<h2 id="5-本地预览web效果">5， 本地预览Web效果</h2>
+
+<pre><code class="language-bash">$ hugo.exe server
+</code></pre>
+
+<p>用本机浏览器里打开 <a href="http://localhost:1313">http://localhost:1313</a> 预览网页效果。</p>
+
+<h2 id="6-生成静态网页">6, 生成静态网页</h2>
+
+<pre><code class="language-bash">$ hugo.exe
+</code></pre>
+
+<p>执行完该命令后，在当前文件夹下会生成一个 public 目录，该目录包含了 Web 网站运行所需的文件，需要上传到 github pages 。</p>
+
+<h2 id="7-上传到github">7, 上传到github</h2>
+
+<pre><code>$ git push origin master
+</code></pre>
+
+<p>在 github 新建一个 Repository ，并在 Settings 里面设置好 GitHub Pages 的 branch 。然后将 public 目录下的所有文件上传到该 Repository 对应的 branch 。</p>
 
 <h2 id="主题">主题</h2>
 
-<p><a href="https://github.com/vividvilla/ezhil">ezhil</a></p>
+<p><a href="https://themes.gohugo.io/">官方主题</a><br />
+<a href="https://github.com/vividvilla/ezhil">ezhil</a></p>
+
+<h2 id="参考">参考</h2>
+
+<p><a href="https://jimmysong.io/posts/building-github-pages-with-hugo/">零基础使用Hugo和GitHub Pages创建自己的博客</a><br />
+<a href="https://zhuanlan.zhihu.com/p/37752930">如何使用Hugo在GitHub Pages上搭建免费个人网站</a><br />
+<a href="https://tonybai.com/2015/09/23/intro-of-gohugo/">使用Hugo搭建静态站点</a></p>
 
                         </div>
 
@@ -107,31 +162,16 @@
 
                         <div class="post-meta meta-tags">
                             
-                            没有标签
+                            <ul class="clearfix">
+                                
+                                <li><a href="http://lteman.com/tags/hugo">hugo</a></li>
+                                
+                            </ul>
                             
                         </div>
                     </article>
                     
-    <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
     
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
     
     
@@ -168,12 +208,18 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
+    <li>
+        <a href="http://lteman.com/categories/hugo/">hugo(1)</a>
+    </li>
+    
 </ul>
     </section>
 
     <section class="widget">
         <h3 class="widget-title">标签</h3>
 <div class="tagcloud">
+    
+    <a href="http://lteman.com/tags/hugo/">hugo</a>
     
 </div>
     </section>
@@ -192,7 +238,7 @@
 </div>
 <footer id="footer">
     <div class="container">
-        &copy; 2019 <a href="http://lteman.com">Lteman Site By </a>.
+        &copy; 2019 <a href="http://lteman.com">Lteman&#39;s Website By </a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
         

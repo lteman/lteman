@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lteman Site</title>
+    <title>Lteman&#39;s Website</title>
     <link>http://lteman.com/</link>
-    <description>Recent content on Lteman Site</description>
+    <description>Recent content on Lteman&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 21 Jun 2019 15:15:04 -0400</lastBuildDate>
@@ -17,8 +17,12 @@
       <pubDate>Fri, 21 Jun 2019 15:15:04 -0400</pubDate>
       
       <guid>http://lteman.com/posts/2019/hugo%E6%90%AD%E5%BB%BAgithub-pages/</guid>
-      <description>download hugo.exe [官方release地址]()
-new a local web site hugo.exe new site blog  主题 ezhil</description>
+      <description>1， 下载 hugo 打开官方release地址 ，根据当前操作系统类型下载和安装相应的 hugo 程序。本文以 Windows 10 操作系统为例。
+2， 新建一个本地Website $ hugo.exe new site blog  执行完该命令后，当前目录下回生成一个 blog 文件。
+3， 新建一篇文章 创建一个 about 页面：
+$ hugo.exe new content/posts/about.md  如果想要显示about内容，则需要删除生成 about.md 文件里的draft = true 。
+4， 给网站添加一个Theme 本文以 beautifulhugo 主题为例，将 beautifulhugo 主题 clone 到 themes 目录下。
+$ cd themes $ git clone https://github.com/rootsongjc/beautifulhugo.git beautifulhugo  为了使 Theme 生效，需要修改 blog 目录下的 config.toml 文件的 theme 值。 本文设置为 theme = &amp;quot;beautifulhugo&amp;quot; 。</description>
     </item>
     
     <item>
@@ -27,7 +31,8 @@ new a local web site hugo.exe new site blog  主题 ezhil</description>
       <pubDate>Fri, 21 Jun 2019 15:00:02 -0400</pubDate>
       
       <guid>http://lteman.com/about/</guid>
-      <description> I&amp;rsquo;m Lteman! </description>
+      <description>I&amp;rsquo;m Lteman! 一个买不起MacBook Pro 、 ThinkPad X1 和华为手机的普通人。
+[联系方式]admin@lteman.com</description>
     </item>
     
     <item>
