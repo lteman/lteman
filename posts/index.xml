@@ -30,5 +30,16 @@
       <description> Welcome to lteman.com </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>http://lteman.com/posts/2019/ubuntu%E5%8D%87%E7%BA%A7golang-1.12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://lteman.com/posts/2019/ubuntu%E5%8D%87%E7%BA%A7golang-1.12/</guid>
+      <description>Ubuntu升级golang 1.12 更新golang版本  add-apt-repository ppa:longsleep/golang-backports apt-get update apt-get install golang-go apt install golang-golang-x-tools
+ rm -rf /etc/apt/sources.list.d/longsleep-ubuntu-golang-backports-xenial.list
+  检查安装golang版本 # go version go version go1.</description>
+    </item>
+    
   </channel>
 </rss>
