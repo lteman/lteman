@@ -59,6 +59,11 @@
   </url>
   
   <url>
+    <loc>http://lteman.com/posts/2019/ubuntu%E5%8D%87%E7%BA%A7golang-1.12/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://lteman.com/series/</loc>
     <priority>0</priority>
   </url>
