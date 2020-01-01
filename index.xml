@@ -6,10 +6,22 @@
     <description>Recent content on Lteman&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Dec 2019 22:29:04 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2020 14:09:35 +0800</lastBuildDate>
     
 	<atom:link href="http://lteman.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git Bash/GUI中文乱码</title>
+      <link>http://lteman.com/posts/2020/git_ch_garbled/</link>
+      <pubDate>Wed, 01 Jan 2020 14:09:35 +0800</pubDate>
+      
+      <guid>http://lteman.com/posts/2020/git_ch_garbled/</guid>
+      <description>Git Bash使用git status显示中文乱码 git Bash界面内点击鼠标右键，在下拉菜单中选择Options...。在弹出来的窗口中，点击窗口左上角的Text选项。在Locale的下拉菜单中选择zh_CN, Character set的下拉菜单中选择UTF-8,点击Save保存修改。
+然后，在命令行输入：
+$ git config --global core.quotepath false  最后，输入git status，可以发现乱码变成了中文。
+git Gui显示中文乱码 在右上角的显示区域点击鼠标右键，在下拉菜单中，选择Encoding，然后在下拉子菜单中选择Unicode(UTF-8)，乱码问题解决了。</description>
+    </item>
     
     <item>
       <title>替换Ubuntu 12.04默认源为163源</title>
