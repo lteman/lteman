@@ -7,22 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>git | Lteman&#39;s Website</title>
-    <meta property="og:title" content="git - Lteman&#39;s Website">
+    <title>linux | Lteman&#39;s Website</title>
+    <meta property="og:title" content="linux - Lteman&#39;s Website">
     <meta property="og:type" content="article">
         
         
     <meta name="Keywords" content="">
-    <meta name="description" content="git">
+    <meta name="description" content="linux">
         
     <meta name="author" content="">
-    <meta property="og:url" content="http://lteman.com/categories/git/">
+    <meta property="og:url" content="http://lteman.com/categories/linux/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/normalize.css">
     
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="alternate" type="application/rss+xml+xml" href="http://lteman.com/categories/git/index.xml" title="Lteman's Website" />
+    <link rel="alternate" type="application/rss+xml+xml" href="http://lteman.com/categories/linux/index.xml" title="Lteman's Website" />
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
@@ -69,7 +69,7 @@
                     
                     <h3 class="archive-title">
                         分类
-                        <span class="keyword">git</span>
+                        <span class="keyword">linux</span>
                         中的文章
                     </h3>
                     
@@ -78,51 +78,25 @@
                         <article class="post">
                             <header>
                                 <h1 class="post-title">
-                                    <a href="http://lteman.com/posts/2020/git_frequently_used_commands/">Git常用命令</a>
+                                    <a href="http://lteman.com/posts/2020/modify_ubuntu1804_server_netif_name/">Ubuntu 18.04 server ens3修改为eth0</a>
                                 </h1>
                             </header>
                             <date class="post-meta meta-date">
-                                2020年1月12日
+                                2020年5月16日
                             </date>
                             
                             <div class="post-meta meta-category">
                                 |
                                 
-                                    <a href="http://lteman.com/categories/git">git</a>
+                                    <a href="http://lteman.com/categories/linux">linux</a>
                                 
                             </div>
                             
                             <div class="post-content">
-                                Git常用命令 git init 在当前目录中初始化仓库，git init命令将创建一个名为.git的子目录。
-$ git init  git add 令将内容从工作目录添加到暂存区,格式为：
-git add &lt;file&gt;...  git add * git add .……
-                                <p class="readmore"><a href="http://lteman.com/posts/2020/git_frequently_used_commands/">阅读全文</a></p>
-                            </div>
-                        </article>
-                    
-                        <article class="post">
-                            <header>
-                                <h1 class="post-title">
-                                    <a href="http://lteman.com/posts/2020/git_ch_garbled/">Git Bash/GUI中文乱码</a>
-                                </h1>
-                            </header>
-                            <date class="post-meta meta-date">
-                                2020年1月1日
-                            </date>
-                            
-                            <div class="post-meta meta-category">
-                                |
-                                
-                                    <a href="http://lteman.com/categories/git">git</a>
-                                
-                            </div>
-                            
-                            <div class="post-content">
-                                Git Bash使用git status显示中文乱码 git Bash界面内点击鼠标右键，在下拉菜单中选择Options...。在弹出来的窗口中，点击窗口左上角的Text选项。在Locale的下拉菜单中选择zh_CN, Character set的下拉菜单中选择UTF-8,点击Save保存修改。
-然后，在命令行输入：
-$ git config --global core.quotepath false  最后，输入git status，可以发现乱码变成了中文。
-git Gui显示中文乱码 在右上角的显示区域点击鼠标右键，在下拉菜单中，选择Encoding，然后在下拉子菜单中选择Unicode(UTF-8)，乱码问题解决了。……
-                                <p class="readmore"><a href="http://lteman.com/posts/2020/git_ch_garbled/">阅读全文</a></p>
+                                在新安装的Ubuntu 18.04 server上执行ifconfig -a命令时，发现熟悉的eth0变成了陌生的ens3。喜旧厌新的我决定将ens3改成熟悉的eth0。
+1.修改/etc/default/grub文件 将 GRUB_CMDLINE_LINUX=&quot;&quot; 修改为 GRUB_CMDLINE_LINUX=&quot;net.ifnames=0 biosdevname=0&quot;。
+2.更新grub sudo update-grub  3.重启设备 reboot  重新登录设备，执行ifconfig -a，就会发现ens3变成了eth0。……
+                                <p class="readmore"><a href="http://lteman.com/posts/2020/modify_ubuntu1804_server_netif_name/">阅读全文</a></p>
                             </div>
                         </article>
                     

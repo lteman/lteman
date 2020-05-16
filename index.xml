@@ -6,10 +6,21 @@
     <description>Recent content on Lteman&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jan 2020 15:15:20 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2020 10:06:15 +0800</lastBuildDate>
     
 	<atom:link href="http://lteman.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ubuntu 18.04 server ens3修改为eth0</title>
+      <link>http://lteman.com/posts/2020/modify_ubuntu1804_server_netif_name/</link>
+      <pubDate>Sat, 16 May 2020 10:06:15 +0800</pubDate>
+      
+      <guid>http://lteman.com/posts/2020/modify_ubuntu1804_server_netif_name/</guid>
+      <description>在新安装的Ubuntu 18.04 server上执行ifconfig -a命令时，发现熟悉的eth0变成了陌生的ens3。喜旧厌新的我决定将ens3改成熟悉的eth0。
+1.修改/etc/default/grub文件 将 GRUB_CMDLINE_LINUX=&amp;quot;&amp;quot; 修改为 GRUB_CMDLINE_LINUX=&amp;quot;net.ifnames=0 biosdevname=0&amp;quot;。
+2.更新grub sudo update-grub  3.重启设备 reboot  重新登录设备，执行ifconfig -a，就会发现ens3变成了eth0。</description>
+    </item>
     
     <item>
       <title>Git常用命令</title>
