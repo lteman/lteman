@@ -32,7 +32,7 @@
   </url>
   
   <url>
-    <loc>http://lteman.com/categories/linux/</loc>
+    <loc>http://lteman.com/categories/ubuntu/</loc>
     <lastmod>2020-05-16T10:06:15+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -49,13 +49,13 @@
   </url>
   
   <url>
-    <loc>http://lteman.com/tags/git/</loc>
+    <loc>http://lteman.com/categories/git/</loc>
     <lastmod>2020-01-12T15:15:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lteman.com/categories/git/</loc>
+    <loc>http://lteman.com/tags/git/</loc>
     <lastmod>2020-01-12T15:15:20+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -63,12 +63,6 @@
   <url>
     <loc>http://lteman.com/posts/2020/git_ch_garbled/</loc>
     <lastmod>2020-01-01T14:09:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://lteman.com/categories/ubuntu/</loc>
-    <lastmod>2019-12-29T22:29:04+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -82,25 +76,25 @@
   </url>
   
   <url>
-    <loc>http://lteman.com/tags/golang/</loc>
-    <lastmod>2019-08-26T14:11:16+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://lteman.com/categories/golang/</loc>
     <lastmod>2019-08-26T14:11:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lteman.com/tags/hugo/</loc>
-    <lastmod>2019-06-21T15:15:04-04:00</lastmod>
+    <loc>http://lteman.com/tags/golang/</loc>
+    <lastmod>2019-08-26T14:11:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://lteman.com/categories/hugo/</loc>
+    <lastmod>2019-06-21T15:15:04-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lteman.com/tags/hugo/</loc>
     <lastmod>2019-06-21T15:15:04-04:00</lastmod>
     <priority>0</priority>
   </url>

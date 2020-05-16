@@ -36,5 +36,14 @@ vi /etc/apt/sources.list  删除sources.list内容，并将下面的内容放入
 deb http://mirrors.163.com/ubuntu/ precise main universe restricted multiverse deb-src http://mirrors.</description>
     </item>
     
+    <item>
+      <title>Ubuntu更新最新Golang版本</title>
+      <link>http://lteman.com/posts/2019/201908-ubuntu-update-golang/</link>
+      <pubDate>Mon, 26 Aug 2019 14:11:16 +0800</pubDate>
+      
+      <guid>http://lteman.com/posts/2019/201908-ubuntu-update-golang/</guid>
+      <description>Ubuntu升级golang 1.12 更新golang版本  add-apt-repository ppa:longsleep/golang-backports apt-get update apt-get install golang-go apt install golang-golang-x-tools rm -rf /etc/apt/sources.list.d/longsleep-ubuntu-golang-backports-xenial.list  检查安装golang版本 # go version go version go1.</description>
+    </item>
+    
   </channel>
 </rss>
