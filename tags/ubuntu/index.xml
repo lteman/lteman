@@ -6,10 +6,19 @@
     <description>Recent content in ubuntu on Lteman&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 May 2020 10:06:15 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2020 22:39:31 +0800</lastBuildDate>
     
 	<atom:link href="http://lteman.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>升级Ubuntu 18.4 的golang版本</title>
+      <link>http://lteman.com/posts/2020/update_ubuntu_golang/</link>
+      <pubDate>Sat, 11 Jul 2020 22:39:31 +0800</pubDate>
+      
+      <guid>http://lteman.com/posts/2020/update_ubuntu_golang/</guid>
+      <description>1，删除旧版本的golang # apt-get remove golang-go # apt-get remove --auto-remove golang-go # apt-get purge --auto-remove golang-go  2，安装最新的golang1.14 # add-apt-repository ppa:longsleep/golang-backports # apt update # apt install golang-go # go version go version go1.</description>
+    </item>
     
     <item>
       <title>Ubuntu 18.04 server ens3修改为eth0</title>
