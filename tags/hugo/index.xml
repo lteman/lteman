@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on Lteman&#39;s Website</title>
@@ -18,7 +18,7 @@
       
       <guid>http://lteman.com/posts/2019/hugo%E6%90%AD%E5%BB%BAgithub-pages/</guid>
       <description>1， 下载 hugo 打开官方release地址 ，根据当前操作系统类型下载和安装相应的 hugo 程序。本文以 Windows 10 操作系统为例。
-2， 新建一个本地Website $ hugo.exe new site blog  执行完该命令后，当前目录下回生成一个 blog 文件。</description>
+2， 新建一个本地Website $ hugo.exe new site blog执行完该命令后，当前目录下回生成一个 blog 文件。</description>
     </item>
     
   </channel>

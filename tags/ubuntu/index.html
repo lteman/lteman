@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.66.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -93,7 +93,7 @@
                             </div>
                             
                             <div class="post-content">
-                                1，删除旧版本的golang # apt-get remove golang-go # apt-get remove --auto-remove golang-go # apt-get purge --auto-remove golang-go  2，安装最新的golang1.14 # add-apt-repository ppa:longsleep/golang-backports # apt update # apt install golang-go # go version go version go1.……
+                                1，删除旧版本的golang # apt-get remove golang-go# apt-get remove --auto-remove golang-go# apt-get purge --auto-remove golang-go2，安装最新的golang1.14 # add-apt-repository ppa:longsleep/golang-backports# apt update# apt install golang-go# go versiongo version go1.……
                                 <p class="readmore"><a href="http://lteman.com/posts/2020/update_ubuntu_golang/">阅读全文</a></p>
                             </div>
                         </article>
@@ -118,7 +118,8 @@
                             <div class="post-content">
                                 在新安装的Ubuntu 18.04 server上执行ifconfig -a命令时，发现熟悉的eth0变成了陌生的ens3。喜旧厌新的我决定将ens3改成熟悉的eth0。
 1.修改/etc/default/grub文件 将 GRUB_CMDLINE_LINUX=&quot;&quot; 修改为 GRUB_CMDLINE_LINUX=&quot;net.ifnames=0 biosdevname=0&quot;。
-2.更新grub sudo update-grub  3.重启设备 reboot  重新登录设备，执行ifconfig -a，就会发现ens3变成了eth0。……
+2.更新grub sudo update-grub3.重启设备 reboot重新登录设备，执行ifconfig -a，就会发现ens3变成了eth0。
+参考 Change default network name (ens33) to old “eth0” on Ubuntu 18.……
                                 <p class="readmore"><a href="http://lteman.com/posts/2020/modify_ubuntu1804_server_netif_name/">阅读全文</a></p>
                             </div>
                         </article>
@@ -142,11 +143,8 @@
                             
                             <div class="post-content">
                                 今晚突然发现使用了好久的Linux虚拟机的Ubuntu版本竟然还是12.04，于是就有了升级一下Ubuntu版本的冲动。但是执行apt-get update后发现速度奇慢无比，
- 备份旧版本的sources.list
-cp /etc/apt/sources.list /etc/apt/sources.list.bak  编辑sources.list文件，将源替换为163源
- 编辑sources.list文件
-vi /etc/apt/sources.list  删除sources.list内容，并将下面的内容放入sources.list文件。
-deb http://mirrors.163.com/ubuntu/ precise main universe restricted multiverse deb-src http://mirrors.……
+ 备份旧版本的sources.list  cp /etc/apt/sources.list /etc/apt/sources.list.bak  编辑sources.list文件，将源替换为163源
+ 编辑sources.list文件    vi /etc/apt/sources.list- 删除sources.list内容，并将下面的内容放入sources.list文件。 deb http://mirrors.……
                                 <p class="readmore"><a href="http://lteman.com/posts/2019/replace_ubuntu_163_source/">阅读全文</a></p>
                             </div>
                         </article>
@@ -169,7 +167,7 @@ deb http://mirrors.163.com/ubuntu/ precise main universe restricted multiverse d
                             </div>
                             
                             <div class="post-content">
-                                Ubuntu升级golang 1.12 更新golang版本  add-apt-repository ppa:longsleep/golang-backports apt-get update apt-get install golang-go apt install golang-golang-x-tools rm -rf /etc/apt/sources.list.d/longsleep-ubuntu-golang-backports-xenial.list  检查安装golang版本 # go version go version go1.……
+                                Ubuntu升级golang 1.12 更新golang版本  add-apt-repository ppa:longsleep/golang-backports apt-get update apt-get install golang-go apt install golang-golang-x-tools rm -rf /etc/apt/sources.list.d/longsleep-ubuntu-golang-backports-xenial.list  检查安装golang版本 # go versiongo version go1.……
                                 <p class="readmore"><a href="http://lteman.com/posts/2019/201908-ubuntu-update-golang/">阅读全文</a></p>
                             </div>
                         </article>
@@ -197,6 +195,10 @@ deb http://mirrors.163.com/ubuntu/ precise main universe restricted multiverse d
     <section class="widget">
         <h3 class="widget-title">最近文章</h3>
 <ul class="widget-list">
+    
+    <li>
+        <a href="http://lteman.com/posts/2021/2021_year_summary/" title="2021年总结">2021年总结</a>
+    </li>
     
     <li>
         <a href="http://lteman.com/posts/2020/update_ubuntu_golang/" title="升级Ubuntu 18.4 的golang版本">升级Ubuntu 18.4 的golang版本</a>
@@ -287,7 +289,7 @@ deb http://mirrors.163.com/ubuntu/ precise main universe restricted multiverse d
 </div>
 <footer id="footer">
     <div class="container">
-        &copy; 2020 <a href="http://lteman.com">Lteman&#39;s Website By </a>.
+        &copy; 2022 <a href="http://lteman.com">Lteman&#39;s Website By </a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
         

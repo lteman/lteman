@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lteman&#39;s Website</title>
@@ -6,10 +6,20 @@
     <description>Recent content on Lteman&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2020 22:39:31 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 21 Jun 2019 15:00:02 -0400</lastBuildDate>
     
 	<atom:link href="http://lteman.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2021年总结</title>
+      <link>http://lteman.com/posts/2021/2021_year_summary/</link>
+      <pubDate>Fri, 31 Dec 2021 23:31:13 +0800</pubDate>
+      
+      <guid>http://lteman.com/posts/2021/2021_year_summary/</guid>
+      <description>2021年总结 2021年疫情依旧反复，日常生活依旧需要天天戴口罩，工作相对忙碌，没有强迫自己抽时间学习一些新的知识和技能。参与运动积极性不高，就夏天学了一点蛙泳，体重上升明显。
+2022年目标 1，学习一些python编程知识 2，写一些技术文章 3，做好文档输出管理 4，读5-10本书 5，每周至少运动一次 6，带家人外出旅游一次 </description>
+    </item>
     
     <item>
       <title>升级Ubuntu 18.4 的golang版本</title>
@@ -17,7 +27,7 @@
       <pubDate>Sat, 11 Jul 2020 22:39:31 +0800</pubDate>
       
       <guid>http://lteman.com/posts/2020/update_ubuntu_golang/</guid>
-      <description>1，删除旧版本的golang # apt-get remove golang-go # apt-get remove --auto-remove golang-go # apt-get purge --auto-remove golang-go  2，安装最新的golang1.14 # add-apt-repository ppa:longsleep/golang-backports # apt update # apt install golang-go # go version go version go1.</description>
+      <description>1，删除旧版本的golang # apt-get remove golang-go# apt-get remove --auto-remove golang-go# apt-get purge --auto-remove golang-go2，安装最新的golang1.14 # add-apt-repository ppa:longsleep/golang-backports# apt update# apt install golang-go# go versiongo version go1.</description>
     </item>
     
     <item>
@@ -28,7 +38,8 @@
       <guid>http://lteman.com/posts/2020/modify_ubuntu1804_server_netif_name/</guid>
       <description>在新安装的Ubuntu 18.04 server上执行ifconfig -a命令时，发现熟悉的eth0变成了陌生的ens3。喜旧厌新的我决定将ens3改成熟悉的eth0。
 1.修改/etc/default/grub文件 将 GRUB_CMDLINE_LINUX=&amp;quot;&amp;quot; 修改为 GRUB_CMDLINE_LINUX=&amp;quot;net.ifnames=0 biosdevname=0&amp;quot;。
-2.更新grub sudo update-grub  3.重启设备 reboot  重新登录设备，执行ifconfig -a，就会发现ens3变成了eth0。</description>
+2.更新grub sudo update-grub3.重启设备 reboot重新登录设备，执行ifconfig -a，就会发现ens3变成了eth0。
+参考 Change default network name (ens33) to old “eth0” on Ubuntu 18.</description>
     </item>
     
     <item>
@@ -38,8 +49,8 @@
       
       <guid>http://lteman.com/posts/2020/git_frequently_used_commands/</guid>
       <description>Git常用命令 git init 在当前目录中初始化仓库，git init命令将创建一个名为.git的子目录。
-$ git init  git add 令将内容从工作目录添加到暂存区,格式为：
-git add &amp;lt;file&amp;gt;...  git add * git add .</description>
+$ git initgit add 令将内容从工作目录添加到暂存区,格式为：
+git add &amp;lt;file&amp;gt;...git add *git add . //把所有修改的信息添加到暂存区git commit 将暂存区里的改动给提交到本地的版本库，创建一个新的提交，其中包含索引的当前内容以及描述更改的给定日志消息。</description>
     </item>
     
     <item>
@@ -50,8 +61,9 @@ git add &amp;lt;file&amp;gt;...  git add * git add .</description>
       <guid>http://lteman.com/posts/2020/git_ch_garbled/</guid>
       <description>Git Bash使用git status显示中文乱码 git Bash界面内点击鼠标右键，在下拉菜单中选择Options...。在弹出来的窗口中，点击窗口左上角的Text选项。在Locale的下拉菜单中选择zh_CN, Character set的下拉菜单中选择UTF-8,点击Save保存修改。
 然后，在命令行输入：
-$ git config --global core.quotepath false  最后，输入git status，可以发现乱码变成了中文。
-git Gui显示中文乱码 在右上角的显示区域点击鼠标右键，在下拉菜单中，选择Encoding，然后在下拉子菜单中选择Unicode(UTF-8)，乱码问题解决了。</description>
+$ git config --global core.quotepath false最后，输入git status，可以发现乱码变成了中文。
+git Gui显示中文乱码 在右上角的显示区域点击鼠标右键，在下拉菜单中，选择Encoding，然后在下拉子菜单中选择Unicode(UTF-8)，乱码问题解决了。
+其他中文乱码设置 在git Gui界面的菜单栏点击Edit选项，在下拉菜单中选择Options.</description>
     </item>
     
     <item>
@@ -61,11 +73,8 @@ git Gui显示中文乱码 在右上角的显示区域点击鼠标右键，在下
       
       <guid>http://lteman.com/posts/2019/replace_ubuntu_163_source/</guid>
       <description>今晚突然发现使用了好久的Linux虚拟机的Ubuntu版本竟然还是12.04，于是就有了升级一下Ubuntu版本的冲动。但是执行apt-get update后发现速度奇慢无比，
- 备份旧版本的sources.list
-cp /etc/apt/sources.list /etc/apt/sources.list.bak  编辑sources.list文件，将源替换为163源
- 编辑sources.list文件
-vi /etc/apt/sources.list  删除sources.list内容，并将下面的内容放入sources.list文件。
-deb http://mirrors.163.com/ubuntu/ precise main universe restricted multiverse deb-src http://mirrors.</description>
+ 备份旧版本的sources.list  cp /etc/apt/sources.list /etc/apt/sources.list.bak  编辑sources.list文件，将源替换为163源
+ 编辑sources.list文件    vi /etc/apt/sources.list- 删除sources.list内容，并将下面的内容放入sources.list文件。 deb http://mirrors.</description>
     </item>
     
     <item>
@@ -74,7 +83,7 @@ deb http://mirrors.163.com/ubuntu/ precise main universe restricted multiverse d
       <pubDate>Mon, 26 Aug 2019 14:11:16 +0800</pubDate>
       
       <guid>http://lteman.com/posts/2019/201908-ubuntu-update-golang/</guid>
-      <description>Ubuntu升级golang 1.12 更新golang版本  add-apt-repository ppa:longsleep/golang-backports apt-get update apt-get install golang-go apt install golang-golang-x-tools rm -rf /etc/apt/sources.list.d/longsleep-ubuntu-golang-backports-xenial.list  检查安装golang版本 # go version go version go1.</description>
+      <description>Ubuntu升级golang 1.12 更新golang版本  add-apt-repository ppa:longsleep/golang-backports apt-get update apt-get install golang-go apt install golang-golang-x-tools rm -rf /etc/apt/sources.list.d/longsleep-ubuntu-golang-backports-xenial.list  检查安装golang版本 # go versiongo version go1.</description>
     </item>
     
     <item>
@@ -84,7 +93,7 @@ deb http://mirrors.163.com/ubuntu/ precise main universe restricted multiverse d
       
       <guid>http://lteman.com/posts/2019/hugo%E6%90%AD%E5%BB%BAgithub-pages/</guid>
       <description>1， 下载 hugo 打开官方release地址 ，根据当前操作系统类型下载和安装相应的 hugo 程序。本文以 Windows 10 操作系统为例。
-2， 新建一个本地Website $ hugo.exe new site blog  执行完该命令后，当前目录下回生成一个 blog 文件。</description>
+2， 新建一个本地Website $ hugo.exe new site blog执行完该命令后，当前目录下回生成一个 blog 文件。</description>
     </item>
     
     <item>
@@ -103,7 +112,7 @@ deb http://mirrors.163.com/ubuntu/ precise main universe restricted multiverse d
       <pubDate>Fri, 21 Jun 2019 09:21:00 -0400</pubDate>
       
       <guid>http://lteman.com/posts/test-post/</guid>
-      <description> Welcome to lteman.com </description>
+      <description>Welcome to lteman.com </description>
     </item>
     
     <item>

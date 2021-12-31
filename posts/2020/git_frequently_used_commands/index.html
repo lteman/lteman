@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.66.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -94,156 +94,78 @@
                         
                         
                         <div class="post-content">
-                            
-
-<h2 id="git常用命令">Git常用命令</h2>
-
+                            <h2 id="git常用命令">Git常用命令</h2>
 <h3 id="git-init">git init</h3>
-
 <p>在当前目录中初始化仓库，<code>git init</code>命令将创建一个名为<code>.git</code>的子目录。</p>
-
 <pre><code>$ git init
-</code></pre>
-
-<h3 id="git-add">git add</h3>
-
+</code></pre><h3 id="git-add">git add</h3>
 <p>令将内容从工作目录添加到暂存区,格式为：</p>
-
 <pre><code>git add &lt;file&gt;...
-</code></pre>
-
-<pre><code>git add *
+</code></pre><pre><code>git add *
 git add .  //把所有修改的信息添加到暂存区
-</code></pre>
-
-<h3 id="git-commit">git commit</h3>
-
+</code></pre><h3 id="git-commit">git commit</h3>
 <p>将暂存区里的改动给提交到本地的版本库，创建一个新的提交，其中包含索引的当前内容以及描述更改的给定日志消息。</p>
-
 <pre><code>git commit -am &quot;fix xxx&quot;
-</code></pre>
-
-<h3 id="git-checkout">git checkout</h3>
-
-<p>切换分支或者检出内容到工作目录<br />
+</code></pre><h3 id="git-checkout">git checkout</h3>
+<p>切换分支或者检出内容到工作目录<br>
 格式：</p>
-
 <pre><code>git checkout -- &lt;file&gt;...
 git checkout [branch]
 git checkout -b [branchname] [tagname]
-</code></pre>
-
-<pre><code>git checkout &lt;文件&gt;  //将单个文件代码回滚到上次提交的版本  
+</code></pre><pre><code>git checkout &lt;文件&gt;  //将单个文件代码回滚到上次提交的版本  
 git checkout -b &lt;branch &gt; //要新建一个分支并同时切换到branch分支  
 git checkout master //切换回 master 分支
-</code></pre>
-
-<h3 id="git-status">git status</h3>
-
+</code></pre><h3 id="git-status">git status</h3>
 <p>查看当前文件状态</p>
-
 <pre><code>git status 
-</code></pre>
-
-<h3 id="git-log">git log</h3>
-
+</code></pre><h3 id="git-log">git log</h3>
 <p>查看提交历史，从最近的提交快照起</p>
-
 <pre><code>git log
-</code></pre>
-
-<h3 id="git-reset">git reset</h3>
-
+</code></pre><h3 id="git-reset">git reset</h3>
 <p>将当前<code>HEAD</code>重置为指定状态，根据传递给动作的参数来执行撤销操作.</p>
-
 <pre><code>git reset --hard HEAD^  //回滚到上一个版本  
 git reset --hard &lt;commit id&gt; //回滚到指定的版本  
-</code></pre>
-
-<h3 id="git-clone">git clone</h3>
-
-<p>克隆仓库，将仓库克隆到新目录<br />
+</code></pre><h3 id="git-clone">git clone</h3>
+<p>克隆仓库，将仓库克隆到新目录<br>
 格式：</p>
-
 <pre><code>git clone [url]
 git clone &lt;url&gt; [-b branchname]  //clone分支；  
-</code></pre>
-
-<h3 id="git-branch">git branch</h3>
-
+</code></pre><h3 id="git-branch">git branch</h3>
 <p>列出，创建或删除分支。</p>
-
 <pre><code>git branch //列出当前所有分支
 git branch -r  //列出所有远程分支  
 git branch -d dev //删除dev分支
-</code></pre>
-
-<h3 id="git-pull">git pull</h3>
-
+</code></pre><h3 id="git-pull">git pull</h3>
 <p>获取远程主机某个分支的更新，然后尝试将更新合并进你所在的分支中。</p>
-
 <h3 id="git-push">git push</h3>
-
-<p>将本地数据库更新推送到远程仓库<br />
+<p>将本地数据库更新推送到远程仓库<br>
 格式：</p>
-
 <pre><code>git push [remote-name] [branch-name]
-</code></pre>
-
-<h3 id="git-merge">git merge</h3>
-
+</code></pre><h3 id="git-merge">git merge</h3>
 <p>合并一个或者多个分支到你已经检出的分支中</p>
-
 <pre><code>git merge &lt;branch-name&gt; //合并指定分支到当前分支
-</code></pre>
-
-<h3 id="git-stash">git stash</h3>
-
-<p>临时地保存一些还没有提交的工作，以便在分支上不需要提交未完成工作就可以清理工作目录。一般配合<code>git stash pop</code>一起使用。<br />
+</code></pre><h3 id="git-stash">git stash</h3>
+<p>临时地保存一些还没有提交的工作，以便在分支上不需要提交未完成工作就可以清理工作目录。一般配合<code>git stash pop</code>一起使用。<br>
 当您想记录工作目录和索引的当前状态，但又想回到干净的工作目录时，可以使用<code>git stash</code>命令将您的本地修改保存下来，并还原工作目录以匹配<code>HEAD</code>提交。</p>
-
 <pre><code>git stash 
 git stash pop
-</code></pre>
-
-<h3 id="git-rm">git rm</h3>
-
+</code></pre><h3 id="git-rm">git rm</h3>
 <p>从工作区或者暂存区移除文件</p>
-
 <pre><code>git rm &lt;file&gt;  //删除工作区文件，并且将这次删除放入暂存区
-</code></pre>
-
-<h3 id="git-diff">git diff</h3>
-
+</code></pre><h3 id="git-diff">git diff</h3>
 <p>显示暂存区和工作区的差异</p>
-
 <pre><code>git diff  //查看尚未暂存的文件更新内容
-</code></pre>
-
-<h3 id="git-config">git config</h3>
-
+</code></pre><h3 id="git-config">git config</h3>
 <p>获取并设置仓库或全局选项</p>
-
 <pre><code>git config --global user.name &lt;name&gt;
 git config --global user.email &lt;email&gt;
-</code></pre>
-
-<h3 id="git-revert">git revert</h3>
-
+</code></pre><h3 id="git-revert">git revert</h3>
 <p>还原一些现有的提交，用于回退某个修改，但保留该修改之后的所有修改。</p>
-
 <pre><code>git revert HEAD~3
-</code></pre>
-
-<h3 id="git-rebase">git rebase</h3>
-
+</code></pre><h3 id="git-rebase">git rebase</h3>
 <p>变基操作，将提交到某一分支上的所有修改都移至另一分支上</p>
-
 <pre><code>git rebase master  //把master分支合并到当前分支
-</code></pre>
-
-<h2 id="参考">参考</h2>
-
+</code></pre><h2 id="参考">参考</h2>
 <p><a href="https://git-scm.com/book/zh/v2">Pro Git book</a></p>
 
                         </div>
@@ -302,6 +224,10 @@ git config --global user.email &lt;email&gt;
     <section class="widget">
         <h3 class="widget-title">最近文章</h3>
 <ul class="widget-list">
+    
+    <li>
+        <a href="http://lteman.com/posts/2021/2021_year_summary/" title="2021年总结">2021年总结</a>
+    </li>
     
     <li>
         <a href="http://lteman.com/posts/2020/update_ubuntu_golang/" title="升级Ubuntu 18.4 的golang版本">升级Ubuntu 18.4 的golang版本</a>
@@ -392,7 +318,7 @@ git config --global user.email &lt;email&gt;
 </div>
 <footer id="footer">
     <div class="container">
-        &copy; 2020 <a href="http://lteman.com">Lteman&#39;s Website By </a>.
+        &copy; 2022 <a href="http://lteman.com">Lteman&#39;s Website By </a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
         

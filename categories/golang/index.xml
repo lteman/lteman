@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>golang on Lteman&#39;s Website</title>
@@ -17,7 +17,7 @@
       <pubDate>Mon, 26 Aug 2019 14:11:16 +0800</pubDate>
       
       <guid>http://lteman.com/posts/2019/201908-ubuntu-update-golang/</guid>
-      <description>Ubuntu升级golang 1.12 更新golang版本  add-apt-repository ppa:longsleep/golang-backports apt-get update apt-get install golang-go apt install golang-golang-x-tools rm -rf /etc/apt/sources.list.d/longsleep-ubuntu-golang-backports-xenial.list  检查安装golang版本 # go version go version go1.</description>
+      <description>Ubuntu升级golang 1.12 更新golang版本  add-apt-repository ppa:longsleep/golang-backports apt-get update apt-get install golang-go apt install golang-golang-x-tools rm -rf /etc/apt/sources.list.d/longsleep-ubuntu-golang-backports-xenial.list  检查安装golang版本 # go versiongo version go1.</description>
     </item>
     
   </channel>

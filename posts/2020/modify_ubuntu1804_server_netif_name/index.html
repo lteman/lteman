@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.66.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -94,29 +94,16 @@
                         
                         
                         <div class="post-content">
-                            
-
-<p>在新安装的<code>Ubuntu 18.04 server</code>上执行<code>ifconfig -a</code>命令时，发现熟悉的<code>eth0</code>变成了陌生的<code>ens3</code>。喜旧厌新的我决定将<code>ens3</code>改成熟悉的<code>eth0</code>。</p>
-
-<h2 id="1-修改-etc-default-grub-文件">1.修改<code>/etc/default/grub</code>文件</h2>
-
+                            <p>在新安装的<code>Ubuntu 18.04 server</code>上执行<code>ifconfig -a</code>命令时，发现熟悉的<code>eth0</code>变成了陌生的<code>ens3</code>。喜旧厌新的我决定将<code>ens3</code>改成熟悉的<code>eth0</code>。</p>
+<h2 id="1修改etcdefaultgrub文件">1.修改<code>/etc/default/grub</code>文件</h2>
 <p>将 <code>GRUB_CMDLINE_LINUX=&quot;&quot;</code> 修改为 <code>GRUB_CMDLINE_LINUX=&quot;net.ifnames=0 biosdevname=0&quot;</code>。</p>
-
-<h2 id="2-更新grub">2.更新grub</h2>
-
+<h2 id="2更新grub">2.更新grub</h2>
 <pre><code>sudo update-grub
-</code></pre>
-
-<h2 id="3-重启设备">3.重启设备</h2>
-
+</code></pre><h2 id="3重启设备">3.重启设备</h2>
 <pre><code>reboot
-</code></pre>
-
-<p>重新登录设备，执行<code>ifconfig -a</code>，就会发现<code>ens3</code>变成了<code>eth0</code>。</p>
-
+</code></pre><p>重新登录设备，执行<code>ifconfig -a</code>，就会发现<code>ens3</code>变成了<code>eth0</code>。</p>
 <h2 id="参考">参考</h2>
-
-<p><a href="https://www.itzgeek.com/how-tos/mini-howtos/change-default-network-name-ens33-to-old-eth0-on-ubuntu-16-04.html">Change default network name (ens33) to old “eth0” on Ubuntu 18.04 / Ubuntu 16.04</a><br />
+<p><a href="https://www.itzgeek.com/how-tos/mini-howtos/change-default-network-name-ens33-to-old-eth0-on-ubuntu-16-04.html">Change default network name (ens33) to old “eth0” on Ubuntu 18.04 / Ubuntu 16.04</a><br>
 <a href="https://jconote.wordpress.com/2017/03/28/rename-enp0s3-to-eth0-ubuntu-16-04/">RENAME ENP0S3 TO ETH0 – UBUNTU 16.04</a></p>
 
                         </div>
@@ -177,6 +164,10 @@
     <section class="widget">
         <h3 class="widget-title">最近文章</h3>
 <ul class="widget-list">
+    
+    <li>
+        <a href="http://lteman.com/posts/2021/2021_year_summary/" title="2021年总结">2021年总结</a>
+    </li>
     
     <li>
         <a href="http://lteman.com/posts/2020/update_ubuntu_golang/" title="升级Ubuntu 18.4 的golang版本">升级Ubuntu 18.4 的golang版本</a>
@@ -267,7 +258,7 @@
 </div>
 <footer id="footer">
     <div class="container">
-        &copy; 2020 <a href="http://lteman.com">Lteman&#39;s Website By </a>.
+        &copy; 2022 <a href="http://lteman.com">Lteman&#39;s Website By </a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
         

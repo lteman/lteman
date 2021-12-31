@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ubuntu on Lteman&#39;s Website</title>
@@ -17,7 +17,7 @@
       <pubDate>Sat, 11 Jul 2020 22:39:31 +0800</pubDate>
       
       <guid>http://lteman.com/posts/2020/update_ubuntu_golang/</guid>
-      <description>1，删除旧版本的golang # apt-get remove golang-go # apt-get remove --auto-remove golang-go # apt-get purge --auto-remove golang-go  2，安装最新的golang1.14 # add-apt-repository ppa:longsleep/golang-backports # apt update # apt install golang-go # go version go version go1.</description>
+      <description>1，删除旧版本的golang # apt-get remove golang-go# apt-get remove --auto-remove golang-go# apt-get purge --auto-remove golang-go2，安装最新的golang1.14 # add-apt-repository ppa:longsleep/golang-backports# apt update# apt install golang-go# go versiongo version go1.</description>
     </item>
     
     <item>
@@ -28,7 +28,8 @@
       <guid>http://lteman.com/posts/2020/modify_ubuntu1804_server_netif_name/</guid>
       <description>在新安装的Ubuntu 18.04 server上执行ifconfig -a命令时，发现熟悉的eth0变成了陌生的ens3。喜旧厌新的我决定将ens3改成熟悉的eth0。
 1.修改/etc/default/grub文件 将 GRUB_CMDLINE_LINUX=&amp;quot;&amp;quot; 修改为 GRUB_CMDLINE_LINUX=&amp;quot;net.ifnames=0 biosdevname=0&amp;quot;。
-2.更新grub sudo update-grub  3.重启设备 reboot  重新登录设备，执行ifconfig -a，就会发现ens3变成了eth0。</description>
+2.更新grub sudo update-grub3.重启设备 reboot重新登录设备，执行ifconfig -a，就会发现ens3变成了eth0。
+参考 Change default network name (ens33) to old “eth0” on Ubuntu 18.</description>
     </item>
     
     <item>
@@ -38,11 +39,8 @@
       
       <guid>http://lteman.com/posts/2019/replace_ubuntu_163_source/</guid>
       <description>今晚突然发现使用了好久的Linux虚拟机的Ubuntu版本竟然还是12.04，于是就有了升级一下Ubuntu版本的冲动。但是执行apt-get update后发现速度奇慢无比，
- 备份旧版本的sources.list
-cp /etc/apt/sources.list /etc/apt/sources.list.bak  编辑sources.list文件，将源替换为163源
- 编辑sources.list文件
-vi /etc/apt/sources.list  删除sources.list内容，并将下面的内容放入sources.list文件。
-deb http://mirrors.163.com/ubuntu/ precise main universe restricted multiverse deb-src http://mirrors.</description>
+ 备份旧版本的sources.list  cp /etc/apt/sources.list /etc/apt/sources.list.bak  编辑sources.list文件，将源替换为163源
+ 编辑sources.list文件    vi /etc/apt/sources.list- 删除sources.list内容，并将下面的内容放入sources.list文件。 deb http://mirrors.</description>
     </item>
     
   </channel>
