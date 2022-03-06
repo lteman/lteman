@@ -68,6 +68,30 @@
                         <article class="post">
                             <header>
                                 <h1 class="post-title">
+                                    <a href="http://lteman.com/posts/2022/git_prune_origin/" title="删除远程库已删除但本地存在的分支" >删除远程库已删除但本地存在的分支</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2022年3月6日
+                            </date>
+                            
+                            <div class="post-meta">
+                                <span>|</span>
+                                
+                                <span class="meta-category"><a href="http://lteman.com/categories/git">git</a></span>
+                                
+                            </div>
+                            
+                            <div class="post-content">
+                                删除远程库已删除但本地存在的分支 在某一个项目进行一段时间后，经常会发现 git 自动补齐时，经常会出现已经merge并且在remote已经删除的分支，使用 git remote show origin 会发现很多本地分支处于 untracked 状态，这个时候，可以使用 git remote prune origin 删除本地所有处于 untracked 状态分支。
+1，查看本地和远端差异 git remote show origin2，删除所有本地非tracked分支 git remote prune origin……
+                            </div>
+                            <p class="readmore"><a href="http://lteman.com/posts/2022/git_prune_origin/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
                                     <a href="http://lteman.com/posts/2021/2021_year_summary/" title="2021年总结" >2021年总结</a>
                                 </h1>
                             </header>
@@ -77,7 +101,7 @@
                             
                             <div class="post-content">
                                 2021年总结 2021年疫情依旧反复，日常生活依旧需要天天戴口罩，工作相对忙碌，没有强迫自己抽时间学习一些新的知识和技能。参与运动积极性不高，就夏天学了一点蛙泳，体重上升明显。
-2022年目标 1，学习一些python编程知识 2，写一些技术文章 3，做好文档输出管理 4，读5-10本书 5，每周至少运动一次 6，带家人外出旅游一次 ……
+2022年目标 1，学习一些python编程知识 2，阅读一些优秀开源代码 3，写一些技术文章 4，做好知识输出文档管理 5，读5-10本书 6，每周至少运动一次 7，带家人外出旅游一次 8，提升英语能力 ……
                             </div>
                             <p class="readmore"><a href="http://lteman.com/posts/2021/2021_year_summary/">阅读全文</a></p>
                         </article>
@@ -272,22 +296,6 @@ git Gui显示中文乱码 在右上角的显示区域点击鼠标右键，在下
                             <p class="readmore"><a href="http://lteman.com/about/">阅读全文</a></p>
                         </article>
                     
-                        <article class="post">
-                            <header>
-                                <h1 class="post-title">
-                                    <a href="http://lteman.com/posts/test-post/" title="Welcome" >Welcome</a>
-                                </h1>
-                            </header>
-                            <date class="post-meta meta-date">
-                                2019年6月21日
-                            </date>
-                            
-                            <div class="post-content">
-                                Welcome to lteman.com ……
-                            </div>
-                            <p class="readmore"><a href="http://lteman.com/posts/test-post/">阅读全文</a></p>
-                        </article>
-                    
                     
 
 
@@ -330,6 +338,10 @@ git Gui显示中文乱码 在右上角的显示区域点击鼠标右键，在下
     <section class="widget">
         <h3 class="widget-title">最近文章</h3>
 <ul class="widget-list">
+    
+    <li>
+        <a href="http://lteman.com/posts/2022/git_prune_origin/" title="删除远程库已删除但本地存在的分支">删除远程库已删除但本地存在的分支</a>
+    </li>
     
     <li>
         <a href="http://lteman.com/posts/2021/2021_year_summary/" title="2021年总结">2021年总结</a>
@@ -377,7 +389,7 @@ git Gui显示中文乱码 在右上角的显示区域点击鼠标右键，在下
 <ul class="widget-list">
     
     <li>
-        <a href="http://lteman.com/categories/git/">git(2)</a>
+        <a href="http://lteman.com/categories/git/">git(3)</a>
     </li>
     
     <li>
